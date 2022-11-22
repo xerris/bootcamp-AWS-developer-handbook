@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.0.37" />
+      <PackageReference Include="Xerris.DotNet.Core" Version="0.0.96" />
+      <PackageReference Include="Xerris.DotNet.Core.Aws" Version="0.0.98" />
+    </ItemGroup>
+
+</Project>
