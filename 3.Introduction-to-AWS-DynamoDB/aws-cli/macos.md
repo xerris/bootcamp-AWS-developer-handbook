@@ -14,7 +14,8 @@ aws dynamodb create-table \
         AttributeName=Artist,KeyType=HASH \
         AttributeName=SongTitle,KeyType=RANGE \
  --provisioned-throughput \
-        ReadCapacityUnits=10,WriteCapacityUnits=5
+        ReadCapacityUnits=10,WriteCapacityUnits=5 \
+ --endpoint-url http://localhost:8000
 ```
 
 ## Adding an item
@@ -32,7 +33,7 @@ aws dynamodb put-item \
 ```bash
 aws dynamodb get-item --consistent-read \
     --table-name Music \
-    --key '{ "Artist": {"S": "No One You Know"}, "SongTitle": {"S": "Call Me Today"}}’
+    --key '{ "Artist": {"S": "No One You Know"}, "SongTitle": {"S": "Call Me Today"}}'
 ```
 
 ## Querying Dynamo for an Item (Mac OS)

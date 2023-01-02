@@ -10,6 +10,7 @@ aws dynamodb create-table `
  --attribute-definitions `
         AttributeName=Artist,AttributeType=S `
         AttributeName=SongTitle,AttributeType=S `
+        AttributeName=SongLength,AttributeType=N `
  --key-schema `
         AttributeName=Artist,KeyType=HASH `
         AttributeName=SongTitle,KeyType=RANGE `
